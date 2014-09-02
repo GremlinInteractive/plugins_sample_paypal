@@ -40,8 +40,6 @@ display.setStatusBar( display.HiddenStatusBar )
 -- Initialize PayPal
 paypal.init
 {
-	licenseKey = "Insert_Your_License_Key_Here", -- If you are ready to use PayPals live servers, insert your license key here. To obtain a license for this plugin, please visit: http://gremlininteractive.com/product-category/corona-plugins/
-	testMode = true, -- Change this to false if you are ready to use PayPals live servers. (i.e. you have set environment to "production" in paypal.config.
 	listener = function( event )
 		for k, v in pairs( event ) do
 			print( k, ":", v )
